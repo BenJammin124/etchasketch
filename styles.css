@@ -6,15 +6,40 @@
     margin: 0 auto;
     width: 480px;
     height: 480px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 1em;
 }
 
 .square {
-    width: 30px;
-    height: 30px;
+    /* width: 30px; */
+    /* height: 30px; */
     /* flex: 1 1 auto; */
     border: 1px solid black;
     /* align-items: stretch; */
     /* display: inline-block; */
+}
+
+h1 {
+    text-align: center;
+}
+
+.holder {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button#reset {
+
+    margin-top: 30px;
+}
+
+#but-div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }

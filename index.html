@@ -10,18 +10,28 @@
 
 <body>
     <h1>Etch-A-Sketch Fun</h1>
-    <button type="button" id="btn">Select Grid Size</button>
-    <label for="color">Pick a color:</label>
-    <select name="color" id="color">
-        <option value="pink">Pink</option>
-        <option value="blue">Blue</option>
-        <option value="red">Red</option>
-    </select>
-    <div id="canvas">
+    <div class="holder">
+        <button type="button" id="btn">Select Grid Size</button>
+        <div>
+            <label for="color">Pick a color:</label>
+            <select name="color" id="color">
+                <option value="pink">Pink</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
 
+            </select>
+        </div>
+    </div>
+    <div id="canvas">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
 
 
     </div>
+
+    <div id="but-div"><button type="reset" id="reset">Reset Canvas</button></div>
 
 
 
